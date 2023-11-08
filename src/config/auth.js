@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 
-const authSecret = process.env.authSecret
+const authSecret = process.env.AUTH_SECRET
 
 module.exports = (req, res, next) => {
     // CORS preflight request

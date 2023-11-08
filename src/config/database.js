@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 mongoose.Promise = global.Promise // Para evitar warning no terminal - Promise no mongoose deprecated
 
-const url = process.env.MONGODB_URI ? process.env.MONGODB_URI : 'mongodb//localhost/mymoney'
+const url = process.env.MONGODB_URI
 module.exports = mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 mongoose.Error.messages.general.required = "O atributo {PATH} é obrigatório."

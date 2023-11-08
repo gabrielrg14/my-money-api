@@ -1,4 +1,4 @@
-const port = process.env.PORT
+require('dotenv').config()
 
 const bodyParser = require('body-parser')
 const express = require('express')
@@ -12,6 +12,7 @@ server.use(bodyParser.json())
 server.use(allowCors)
 server.use(queryParser())
 
+const port = process.env.PORT || 3333
 server.listen(port, function() {
     console.log(`BACKEND is running on port ${port}.`)
 })
