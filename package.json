@@ -2,12 +2,29 @@
   "name": "my-money-api",
   "version": "1.0.0",
   "main": "src/loader.js",
+  "description": "The Payment Cycles financial application API.",
+  "author": "Gabriel Rapucci Gonzalez <gabrielrapuccigonzalez14@hotmail.com> (https://gabrielrapucci.com.br)",
+  "homepage": "https://github.com/gabrielrg14/my-money-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielrg14/my-money-api"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielrg14/my-money-api/issues"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "rest-api",
+    "backend",
+    "portfolio"
+  ],
+  "license": "MIT",
   "scripts": {
     "start": "node src/loader.js",
     "dev": "nodemon",
     "production": "pm2 start src/loader.js --name my-money-api"
   },
-  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.19.0",
